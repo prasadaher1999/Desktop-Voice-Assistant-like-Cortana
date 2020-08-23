@@ -6,3 +6,9 @@
 3.wikipedia
 4.webbrowser
 5.smtplib
+
+# Commands to give cortana : 
+open facebook
+open whatsapp
+open w3school
+stop cortana (cortana will shutdown)
