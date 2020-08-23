@@ -8,7 +8,7 @@
 5.smtplib
 
 # Commands to give cortana : 
-open facebook
-open whatsapp
-open w3school
+open facebook,
+open whatsapp,
+open w3school,
 stop cortana (cortana will shutdown)
