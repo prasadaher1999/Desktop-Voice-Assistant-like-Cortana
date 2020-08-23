@@ -57,15 +57,6 @@ def takeCommand():
         return "None"
     return query
 
-def sendEmail(to, content):
-    server = smtplib.SMTP('smtp.gmail.com', 587)
-    server.ehlo()
-    server.starttls()
-    passfile=open("Y:\\YouTube Channel\\password.txt")
-    password=passfile.read()
-    server.login('hiraaher1999@gmail.com',password)
-    server.sendmail('hiraaher1999@gmail.com', to, content)
-    server.close()
 
 if __name__ == "__main__":
     # speak("hello sir how can i help you")
@@ -131,17 +122,4 @@ if __name__ == "__main__":
             uripath="F:\\Movies\\Bollywood\\URI.mkv"
             os.startfile(uripath)
         
-        elif 'send email' in query:
-            try:
-                speak("Enter the receiver email id:")
-                mailto=input("Enter the receiver email id:")
-                speak("What should I say?")
-                content = takeCommand()
-                to=mailto
-                # to = "abc@gmail.com"    
-                sendEmail(to, content)
-                speak("Email has been sent successfully!")
-
-            except Exception as e:
-                print(e)
-                speak("Sorry sir, I am not able to send this email :(")    
+       
